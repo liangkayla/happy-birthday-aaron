@@ -1,13 +1,43 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Allpets</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Allpets</h1>
-    <p>Hello from Cloudflare Pages.</p>
-    <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>22 Letters for Aaron</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="intro">
+      <p class="eyebrow">Aaron's 22nd Birthday</p>
+      <h1>22 letters for 22 years</h1>
+      <p>Flip through this little birthday book, one letter at a time.</p>
+    </section>
+
+    <section class="book-wrap" aria-label="Birthday letter book">
+      <button class="nav-button" id="prev" aria-label="Previous page">&#8249;</button>
+
+      <div class="book" id="book">
+        <article class="page cover left-page">
+          <div class="sticker big-number">22</div>
+          <h2>Letters for Aaron</h2>
+          <p>Happy 22nd Birthday</p>
+          <div class="decorations">✦ ✿ ♡ ✧ ❀</div>
+        </article>
+
+        <article class="page letter-page right-page" id="letterPage">
+          <p class="page-number" id="pageNumber">Letter 1 of 22</p>
+          <h2 id="letterTitle">Dear Aaron,</h2>
+          <div class="letter-text" id="letterText"></div>
+        </article>
+      </div>
+
+      <button class="nav-button" id="next" aria-label="Next page">&#8250;</button>
+    </section>
+
+    <div class="dots" id="dots" aria-label="Page dots"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
